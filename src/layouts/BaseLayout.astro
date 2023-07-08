@@ -19,11 +19,13 @@ const { title, description, current } = Astro.props
     <SEO
       charset="UTF-8"
       description={description}
+      canonical= "http://astro-demo-site.vercel.app/"
       openGraph={{
         basic: {
           title: title,
           type: `${current === 'index' ? 'website' : 'article'}`,
           image: 'https://astro-demo-site.vercel.app/ogimage.png',
+          url: 'https://astro-demo-site.vercel.app/',
         },
         image: {
           alt: 'Sample Website Design - Powered by Coloso',
